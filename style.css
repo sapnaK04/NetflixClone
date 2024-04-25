@@ -259,21 +259,63 @@ footer .questions{
     color: rgb(234, 218, 218);
 }
 
-@media  screen and(max-width:1300px)  {
-    .footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    } 
-}
 
-.footer a{
-    font-size: 14px;
-    color: white;
-}
+@media only screen and (max-width: 600px) {
 
-.footer-item{
-    display: flex;
-    flex-direction: column;
-    gap: 23px;
+    .main {
+      background-size: cover;
+    }
+  
+    .hero {
+      padding: 0 15px;
+    }
+  
+    .hero > * {
+      font-size: 18px;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-buttons input {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 15px;
+    }
+  
+    .secImg img,
+    .secImg1 img {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .secImg video,
+    .secImg1 video {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      left: 0;
+      top: 0;
+      transform: translate(0, -50%);
+    }
+  
+    .faqbox {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+      max-width: 90vw;
+      margin: 10px auto;
+    }
+  
+    .footer {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+  
+  
 
-}
+
+
